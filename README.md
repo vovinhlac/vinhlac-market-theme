@@ -1,38 +1,33 @@
 # VinhLac Market Theme
 
-A responsive custom WooCommerce theme for digital products such as WordPress themes, plugins, PHP scripts, website templates, complete websites, and design assets.
+A custom WordPress/WooCommerce storefront project for digital products, with a strong focus on responsive UI implementation, frontend performance, technical SEO, and maintainable template structure.
 
-> This public repository is a portfolio-focused engineering snapshot. Production credentials, customer data, uploads, backups, and site-specific configuration are intentionally excluded.
+> This repository is a focused public engineering snapshot for code review, not the full production theme package. Production credentials, customer data, uploads, compiled private assets, and site-specific integrations are intentionally excluded.
 
-## What I built
+## Engineering examples in this snapshot
 
-I designed the storefront requirements and theme architecture, implemented and iterated PHP/WordPress templates and frontend behavior, and handled WooCommerce integration, responsive UI, technical SEO, QA, and performance-oriented asset decisions.
-
-## Highlights
-
-- Custom WordPress theme structure using PHP templates and reusable template parts
-- WooCommerce archive, product, cart, checkout, taxonomy, account, and review customizations
-- Responsive frontend architecture with Tailwind CSS/PostCSS and JavaScript
-- Custom blog and guide templates
-- Structured-data/schema integration
-- Search, order lookup, demo viewer, and storefront customizations
-- Performance-conscious enqueueing and critical frontend assets
+- WordPress theme bootstrap and modern theme-support configuration
+- WooCommerce product-card template with escaped output and responsive action states
+- Reusable accessible blog/content-card template
+- WooCommerce presentation helpers and product metadata handling
+- Tailwind/PostCSS configuration and theme design tokens
+- Scoped asset loading plus homepage-only WooCommerce asset pruning
+- Critical-CSS loading pattern for performance-sensitive pages
+- Fallback meta/canonical/JSON-LD output that yields to dedicated SEO plugins
+- Security headers and stable custom-route registration
+- GitHub Actions PHP 8.0, 8.2, and 8.4 syntax matrix
 
 ## Tech stack
 
 PHP · WordPress · WooCommerce · JavaScript · HTML5 · CSS3 · Tailwind CSS · PostCSS
 
-## Development
+## Production project scope
 
-```bash
-npm install
-npm run dev
-npm run build
-```
+The larger private project also includes product/archive/cart/checkout/account customizations, search and order lookup, demo viewing, blog/guides, reviews, and additional storefront workflows. Those production-only files are intentionally not all published here.
 
-## My role
+## My contribution
 
-I owned the product/UI requirements, theme architecture decisions, WordPress/WooCommerce integration, iterative implementation, responsive QA, debugging, and technical SEO/performance priorities.
+I owned the storefront and UI requirements, architecture direction, WordPress/WooCommerce integration decisions, iterative implementation, responsive QA, debugging, and technical SEO/performance priorities for this portfolio project.
 
 ## License
 
