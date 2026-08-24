@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a reproducible WordPress/WooCommerce theme defect
+title: "[Bug]: "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: WordPress, WooCommerce, PHP, browser and viewport when relevant.
+  - type: textarea
+    id: impact
+    attributes:
+      label: UI, accessibility, performance or commerce impact
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, customer data and private production information.
+          required: true
