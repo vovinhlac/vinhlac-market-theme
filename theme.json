@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"defaultPalette": false,
+			"palette": [
+				{ "slug": "brand", "name": "Brand", "color": "#1142d4" },
+				{ "slug": "ink", "name": "Ink", "color": "#101828" },
+				{ "slug": "muted", "name": "Muted", "color": "#6a7282" },
+				{ "slug": "surface", "name": "Surface", "color": "#f6f7f8" },
+				{ "slug": "sale", "name": "Sale", "color": "#f59f0a" },
+				{ "slug": "white", "name": "White", "color": "#ffffff" }
+			]
+		},
+		"layout": {
+			"contentSize": "800px",
+			"wideSize": "1280px"
+		},
+		"spacing": {
+			"units": ["px", "rem", "%", "vw"]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Be Vietnam Pro\", ui-sans-serif, system-ui, sans-serif",
+					"name": "Be Vietnam Pro",
+					"slug": "be-vietnam-pro"
+				}
+			],
+			"fontSizes": [
+				{ "slug": "small", "size": "0.875rem", "name": "Small" },
+				{ "slug": "medium", "size": "1rem", "name": "Medium" },
+				{ "slug": "large", "size": "1.5rem", "name": "Large" },
+				{ "slug": "x-large", "size": "2.25rem", "name": "Extra Large" }
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#ffffff",
+			"text": "#101828"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--be-vietnam-pro)",
+			"fontSize": "1rem",
+			"lineHeight": "1.75"
+		}
+	}
+}
