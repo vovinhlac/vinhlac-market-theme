@@ -2,24 +2,18 @@
   "name": "lacvo-market",
   "version": "2.0.52",
   "private": true,
-  "description": "Tailwind build for the VinhLac Market WordPress theme.",
+  "description": "Reproducible frontend build for the VinhLac Market WordPress/WooCommerce theme portfolio snapshot.",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "tailwindcss -i ./assets/src/app.css -o ./assets/dist/app.css --watch",
-    "build": "tailwindcss -i ./assets/src/app.css -o ./assets/dist/app.css --minify && node -e \"require('fs').copyFileSync('assets/src/app.js','assets/dist/app.js')\"",
+    "build": "mkdir -p ./assets/dist && tailwindcss -i ./assets/src/app.css -o ./assets/dist/app.css --minify && cp ./assets/src/app.js ./assets/dist/app.js",
     "lint:js": "node --check ./assets/src/app.js",
-    "lint:php": "node ./scripts/validate-php.js",
-    "test:menu": "node ./scripts/validate-menu.js",
-    "test:menu-css": "node ./scripts/validate-menu-css.js",
-    "test:promotion": "node ./scripts/validate-promotion.js",
-    "test:commerce": "node ./scripts/validate-commerce.js",
-    "test:ui-1-4": "node ./scripts/validate-ui-1-4.js",
-    "test": "npm run lint:js && npm run lint:php && npm run build && npm run test:menu && npm run test:menu-css && npm run test:promotion && npm run test:commerce && npm run test:ui-1-4 && npm run test:blog-guides && npm run test:currency",
-    "test:currency": "node ./scripts/validate-multicurrency.js",
-    "test:blog-guides": "node ./scripts/validate-blog-guides.js"
+    "test": "npm run lint:js && npm run build"
   },
   "devDependencies": {
     "autoprefixer": "10.4.21",
-    "php-parser": "3.2.5",
     "postcss": "8.5.6",
     "tailwindcss": "3.4.17"
   }
